@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Chatbot Tư Vấn Luật Lao Động</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Chatbot Tư Vấn Luật Lao Động</h1>
+            <a href="{{ url_for('main.index') }}" class="back-btn">Trang chủ</a>
+        </header>
+        
+        <main class="chat-main">
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be added here via JavaScript -->
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Xin chào! Tôi là chatbot tư vấn luật lao động. Tôi có thể giúp bạn tư vấn về:
+                        <ol class="message-content">
+                            <li>Tư vấn về hợp đồng lao động</li>
+                            <li>Tư vấn về thay đổi mức lương, lương làm thêm giờ và phụ cấp</li>
+                            <li>Tư vấn về bảo hiểm</li>
+                        </ol>
+                        Bạn muốn được tư vấn về vấn đề nào? (Nhập số 1, 2 hoặc 3)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-input-form">
+                <input type="text" id="user-input" placeholder="Nhập tin nhắn của bạn..." autofocus>
+                <button id="send-btn">Gửi</button>
+            </div>
+        </main>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Tư Vấn Luật Lao Động</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chatbot Tư Vấn Luật Lao Động</h1>
+            <p>Hệ thống tư vấn tự động về Luật lao động</p>
+        </header>
+        
+        <section class="features">
+            <div class="feature">
+                <h2>Tư vấn về hợp đồng lao động</h2>
+                <p>Được tư vấn về các vấn đề liên quan đến ký kết, thực hiện, chấm dứt hợp đồng lao động.</p>
+            </div>
+            
+            <div class="feature">
+                <h2>Tư vấn về tiền lương và phụ cấp</h2>
+                <p>Tìm hiểu về các quy định liên quan đến tiền lương, lương làm thêm giờ, thưởng và phụ cấp.</p>
+            </div>
+            
+            <div class="feature">
+                <h2>Tư vấn về bảo hiểm</h2>
+                <p>Được tư vấn về các chế độ bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp và thai sản.</p>
+            </div>
+        </section>
+        
+        <div class="cta">
+            <a href="{{ url_for('main.chat') }}" class="btn">Bắt đầu tư vấn ngay</a>
+        </div>
+        
+        <footer>
+            <p>Hệ thống chatbot tư vấn luật lao động - Sử dụng phương pháp CBR (Case-based Reasoning)</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
